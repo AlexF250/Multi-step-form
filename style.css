@@ -1,0 +1,409 @@
+body{
+    background-color: hsl(217, 100%, 97%);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.steps{
+    top: 5%;
+    left: 12%;
+    width: 80%;
+}
+
+.steps p {
+    border: 2px solid hsl(206, 94%, 87%);
+    border-radius: 9999px;
+    width: 45px;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 20px 7px 0;
+}
+
+.currentStep{
+    background: hsl(206, 94%, 87%);
+    color: #000;
+}
+
+.step{
+    margin: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h7{
+    font-size: .8em;
+    color: hsl(229, 24%, 87%);
+}
+
+h6{
+    letter-spacing: 2px;
+}
+
+label{
+    color: hsl(213, 96%, 18%);
+}
+
+
+h3{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+h4{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    font-size: .99em;
+}
+section p{
+    color: hsl(231, 11%, 63%);
+}
+
+input::placeholder{
+    color: hsl(231, 11%, 63%) !important;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+section{
+    position: relative;
+}
+
+.step-button{
+    margin-left: 81%;
+    margin-top: 15%;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    color: #fff;
+    background-color: hsl(213, 96%, 18%);
+}
+
+.card-title{
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.card-subtitle{
+    color: hsl(231, 11%, 63%);
+}
+
+input[class^='card-check']:checked + .card{
+    border-color: hsl(243, 100%, 62%);
+    background-color: hsl(217, 100%, 97%);
+}
+
+.card:hover{
+    border-color: hsl(243, 100%, 62%);
+}
+
+.monthly,
+.yearly{
+    font-weight: 700;
+}
+
+.choice{
+    color: hsl(213, 96%, 18%);
+}
+
+.free::after{
+    content: "2 months free";
+    font-size: .9em;
+    color: hsl(213, 96%, 18%);
+}
+
+.free{
+    margin: 0;
+}
+
+.check-switch{
+    position: relative;
+}
+
+.form-switch{
+    background-color: hsl(231, 100%, 99%);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.check-button{
+    width: 50px;
+    background-color:hsl(213, 96%, 18%) ;
+    height: 25px;
+    border: none;
+    border-radius: 9999px;
+    position: relative;
+    transition: all .3s;
+}
+
+.check-button::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 9999px;
+    margin: 2.5px 13px;
+    transform: translateX(14px);
+    transition: all .3s;
+}
+
+.check-switch:checked + .check-button::before{
+    transform: translateX(-10px);
+    background-color: #fff;
+}
+
+.check-switch:checked + .check-button{
+    background-color: hsl(213, 96%, 18%);
+}
+
+.back-button{
+    border: none;
+    color: hsl(231, 11%, 63%);
+    background-color: #fff;
+    font-weight: 700;
+    margin-top: 15%;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+}
+
+.sub-text{
+    font-size: .9em;
+}
+
+.price-month{
+    color: hsl(243, 100%, 62%);
+}
+
+
+.service-selector{
+    border: 1px solid hsl(231, 11%, 63%);
+    position: relative;
+}
+
+.service-text::before{
+    content: "";
+    width: 100%;
+    height: 77.5px;
+    left: 0;
+    top: 0;
+    border-radius: 7px;
+    position: absolute;
+}
+
+.service-check:checked + .service-text::before{
+    background-color: hsl(243, 100%, 80%, 0.1);
+    border: 1px solid hsl(243, 100%, 62%);
+}
+
+.service-selector:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+    cursor: pointer;
+}
+
+.service-check:checked{
+    background-color: hsl(243, 100%, 62%);
+}
+
+.empty::after{
+    content: "This field is required";
+    position: absolute;
+    right: 3%;
+    color: hsl(354, 84%, 57%);
+}
+
+.formatError::after{
+    content: "Don't use numbers just letters";
+    position: absolute;
+    right: 3%;
+    color: hsl(354, 84%, 57%);
+}
+
+.errorEmail::after{
+    content: "Not a valid email";
+    position: absolute;
+    right: 3%;
+    color: hsl(354, 84%, 57%);
+}
+
+.errorPhone::after{
+    content: "Not a valid phone number";
+    position: absolute;
+    right: 3%;
+    color: hsl(354, 84%, 57%);
+}
+
+
+
+.changeModality{
+    text-decoration: solid underline hsl(231, 11%, 50%) 2px;
+    color: hsl(231, 11%, 63%);
+}
+
+.changeModality:hover{
+    cursor: pointer;
+}
+
+.summary{
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 10px;
+}
+
+.cardPlan{
+    border-bottom: 1px solid hsl(231, 11%, 63%);
+}
+
+.totalPrice{
+    font-size: 1.4em;
+    font-weight: 900;
+    color: hsl(243, 100%, 62%);
+}
+
+.addPrice{
+    color: hsl(213, 96%, 18%);
+}
+
+.planPrice{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: hsl(213, 96%, 18%);
+}
+
+.plan{
+    font-size: 1.2em;
+}
+
+.con-btn{
+    background-color: hsl(243, 100%, 62%);
+}
+
+.side-image-mobile{
+    display: none;
+}
+
+.side-image{
+    display: block;
+}
+
+.footer-buttons{
+    display: none;
+}
+
+@media screen and (max-width:992px){
+    .container{
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        max-width: 100%;
+        padding: 0;
+    }
+
+section{
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 35px !important;
+        width: 80% !important;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+
+    .steps p{
+        border-radius: 100%;
+        width: 35px;
+        padding: 0;
+        height: 35px;
+        padding-top: 5px;
+    }
+
+    .side-image{
+        display: none;
+    }
+
+    .side-image-mobile{
+        display: block;
+        width: 100%;
+    }
+
+    aside{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .aside-text{
+        display: none;
+    }
+
+    .steps{
+        justify-content: center;
+    }
+
+    .footer-buttons{
+        display: block;
+        width: 100%;
+        height: 150px;
+        background-color: #fff;
+        position: absolute;
+        top: 1000px;
+    }
+
+    .step-button{
+        position: absolute;
+        top: 700px;
+        left: 0;
+        z-index: 10;
+    }
+
+    .back-button{
+        position: absolute;
+        top: 175%;
+        left: -5%;
+        z-index: 10;
+    }
+
+    .card-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-1{
+        top: 770px;
+    }
+
+        .btn-2{
+            top: 770px;
+        }
+
+        .backBtn-1{
+            top: 770px;
+        }
+
+        .backBtn-2{
+            top: 770px;
+        }
+
+        .btn-3{
+            top: 770px;
+        }
+
+        .backBtn-3{
+            top: 790px;
+        }
+
+        .btn-4{
+            top: 790px;
+        }
+}
