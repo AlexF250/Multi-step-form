@@ -54,7 +54,7 @@ const thirdBack = document.querySelector(".backBtn-3");
 const forthBtn = document.querySelector(".btn-4");
 
 let abr;
-let modality;
+let modality = "monthly";
 let cardSelection;
 
 const priceMapMonthly = {
