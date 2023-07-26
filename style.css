@@ -294,9 +294,7 @@ input[class^='card-check']:checked + .card{
     display: block;
 }
 
-.footer-buttons{
-    display: none;
-}
+
 
 @media screen and (max-width:992px){
     .container{
@@ -351,59 +349,27 @@ section{
         justify-content: center;
     }
 
-    .footer-buttons{
-        display: block;
-        width: 100%;
-        height: 150px;
-        background-color: #fff;
-        position: absolute;
-        top: 1000px;
-    }
-
-    .step-button{
-        position: absolute;
-        top: 700px;
-        left: 0;
-        z-index: 10;
-    }
-
-    .back-button{
-        position: absolute;
-        top: 175%;
-        left: -5%;
-        z-index: 10;
-    }
-
     .card-section{
         display: flex;
         flex-direction: column;
     }
 
-    .btn-1{
-        top: 770px;
+    .footer-buttons{
+        position: absolute;
+        width: 100vw;
+        background-color: #fff;
+        height: 100px;
+        left: -12.5%;
+        top: 930px;
     }
 
-        .btn-2{
-            top: 770px;
-        }
+    .step-button{
+        margin-top: 15px;
+        margin-left: 75%;
+    }
 
-        .backBtn-1{
-            top: 770px;
-        }
+    .back-button{
+        margin-top: 15px;
+    }
 
-        .backBtn-2{
-            top: 770px;
-        }
-
-        .btn-3{
-            top: 770px;
-        }
-
-        .backBtn-3{
-            top: 790px;
-        }
-
-        .btn-4{
-            top: 790px;
-        }
 }
