@@ -1,6 +1,7 @@
 body{
     background-color: hsl(217, 100%, 97%);
     font-family: 'Ubuntu', sans-serif;
+    height: 150vh;
 }
 
 .steps{
@@ -307,6 +308,10 @@ input[class^='card-check']:checked + .card{
     .container{
         max-width: 100%;
         padding: 0;
+    }
+
+    body{
+        max-height: 500px;
     }
 
 section{
